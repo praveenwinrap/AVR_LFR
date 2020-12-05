@@ -1,0 +1,6 @@
+https://api.thingspeak.com/channels/410218/fields/1/last.txt 
+
+https://api.thingspeak.com/channels/410218/fields/1.json?results=2
+
+
+https://api.thingspeak.com/update?api_key=ER8YOHD135RU1J7O&field1=30

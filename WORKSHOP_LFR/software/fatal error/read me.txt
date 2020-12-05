@@ -1,0 +1,9 @@
+1) copy msys-1.0.dll file
+
+
+2) paste it in  
+
+        C:\WinAVR-20100110\utils\bin path
+
+
+3) click on "replace the file in destination"

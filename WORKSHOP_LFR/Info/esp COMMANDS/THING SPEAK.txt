@@ -1,0 +1,31 @@
+
+//-------------------------this is to send value on the server----using module-------------------------//
+AT
+ATE0
+AT+CWJAP="kamlesh","12345678"
+AT+CIPMUX=1
+AT+CIPSERVER=1,80
+AT+CIPSTART=4,"TCP","184.106.153.149",80		------THING SPEAK API
+4,CONNECT
+
+OK
+AT+CIPSEND=4,44   	-------including \r\n --- so we should count upto 42 and + 2 for \r\n----
+
+OK
+> GET /update?key=WIGWO4TV8LFSFBHM&field1=88  
+Recv 44 bytes
+
+SEND OK
+AT+CIPCLOSE=4
+4,CLOSED
+
+OK
+**************************for direct web access***************************
+GET https://api.thingspeak.com/update?api_key=4DW2G8J5JKXZ8C9L&field1=0
+*****************************************************
+
+
+AT+CIPSTART=4,"TCP","184.106.153.149",80
+AT+CIPSEND=4,64
+> GET /channels/341118/feeds.json?key=T30AHEJS0JGGRPIR&results=2
+AT+CIPCLOSE=4
