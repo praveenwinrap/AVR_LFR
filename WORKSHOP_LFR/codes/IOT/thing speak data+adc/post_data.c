@@ -32,7 +32,7 @@ _delay_ms(3000);
 uart_string("AT+CIPSEND=51\r\n");
 _delay_ms(100);
 
-uart_string("GET /update?api_key=HNI8SQCY8TU970TO&field1=");
+uart_string("GET /update?api_key=YOUR_TOKEN&field1=");
 uart_num(digital);
 uart_string("\r\n");
 _delay_ms(100);

@@ -25,7 +25,7 @@ _delay_ms(5000);
 uart_string("AT+CIPSEND=49\r\n");
 _delay_ms(500);
 
-uart_string("GET /update?api_key=ER8YOHD135RU1J7O&field1=8\r\n");
+uart_string("GET /update?api_key=YOUR_TOKEN&field1=8\r\n");
 _delay_ms(100);
 
 uart_string("AT+CIPCLOSE\r\n");
